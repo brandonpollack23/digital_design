@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity adder_super is 
+	generic
+	(
+		WIDTH : positive := 8
+	);
+	port
+	(
+			x, y  : in  std_logic_vector(WIDTH-1 downto 0);
+		 cin   : in  std_logic;
+		 s     : out std_logic_vector(WIDTH-1 downto 0);
+		 cout  : out std_logic;
+		 bg : out std_logic;
+		 bp : out std_logic
+	);
+end adder_super;
+
+architecture 

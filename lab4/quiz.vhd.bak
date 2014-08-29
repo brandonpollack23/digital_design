@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity quiz is
+port
+(
+	x,y : in std_logic;
+	count : out std_logic_vector(3 downto 0)
+);
+end quiz;
+
+architecture bhv of quiz is
+
+signal next_count : std_logic_1164
